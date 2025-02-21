@@ -8,15 +8,16 @@
 {% block content %}
 
 <section>
+
+    <img class="banner"  src="{{post.banner.url}}" alt="{{post.title}}">
+
     <h1>{{post.title}}</h1>
 
 
-    <article class="posts">
 
 
         <p>{{post.date}}</p>
 
         <p>{{post.slug}}</p>
-    </article>
 </section>
 {% endblock  %}
