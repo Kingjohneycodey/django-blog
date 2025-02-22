@@ -14,12 +14,12 @@ posts
 
     <article class="posts">
         <h2>
-            <a href="{% url 'posts:page' slug=post.slug %}">{{post.title}}</a>
+            <a href="{% url 'posts:page' slug=post.slug %}">{{ post.title }}</a>
         </h2>
 
-        <p>{{post.date}}</p>
+        <p>{{ post.date }} by {{ post.author }}</p>
 
-        <p>{{post.slug}}</p>
+        <p>{{ post.slug }}</p>
     </article>
     {% endfor %}
 </section>
